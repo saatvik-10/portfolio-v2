@@ -61,14 +61,14 @@ const Contact = () => {
   return (
     <section id="contact" className="flex flex-col gap-y-3">
       <Heading title="Contact" />
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div className="grid grid-cols-2 gap-y-8">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-4 gap-y-8 md:grid-cols-2">
           <Link
             href="https://www.linkedin.com/in/saatvik-madan-9ab4a32a9/"
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandLinkedin className="social size-28 text-zinc-100" />
+            <IconBrandLinkedin className="social size-13 text-zinc-100 md:size-28" />
           </Link>
 
           <Link
@@ -76,7 +76,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconMail className="social size-28 text-zinc-100" />
+            <IconMail className="social size-13 text-zinc-100 md:size-28" />
           </Link>
 
           <Link
@@ -84,7 +84,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandGithub className="social size-28 text-zinc-100" />
+            <IconBrandGithub className="social size-13 text-zinc-100 md:size-28" />
           </Link>
 
           <Link
@@ -92,7 +92,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandX className="social size-28 text-zinc-100" />
+            <IconBrandX className="social size-13 text-zinc-100 md:size-28" />
           </Link>
         </div>
 
@@ -105,7 +105,7 @@ const Contact = () => {
             {...register("name")}
             type="text"
             placeholder="Name"
-            className="text-zinc-300"
+            className="text-zinc-300 placeholder:text-xs"
           />
           {errors.name && (
             <p className="-mt-3 -mb-2 text-xs text-red-500 md:text-sm">
@@ -116,7 +116,7 @@ const Contact = () => {
             {...register("email")}
             type="email"
             placeholder="Email"
-            className="text-zinc-300"
+            className="text-zinc-300 placeholder:text-xs"
           />
           {errors.email && (
             <p className="-mt-3 -mb-2 text-xs text-red-500 md:text-sm">
@@ -126,7 +126,7 @@ const Contact = () => {
           <Textarea
             {...register("message")}
             placeholder="Type your message here."
-            className="h-screen flex-1 resize-none text-zinc-300"
+            className="h-screen flex-1 resize-none text-zinc-300 placeholder:text-xs"
           />
           {errors.message && (
             <p className="-mt-3 -mb-2 text-xs text-red-500 md:text-sm">

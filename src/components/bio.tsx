@@ -1,9 +1,20 @@
+'use client'
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Modal } from "./ui/animated-modal";
 import { Download, Mail } from "lucide-react";
 
 const Bio = () => {
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/saatvik_resume.pdf";
+    link.download = "Saatvik_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="flex items-center justify-between">
       <div className="flex flex-col gap-y-3">
@@ -29,7 +40,10 @@ const Bio = () => {
             </Button>
           </Modal>
           <Modal>
-            <Button className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base">
+            <Button
+              onClick={handleResumeDownload}
+              className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base"
+            >
               <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-80">
                 HIRE ME
               </span>

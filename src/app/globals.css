@@ -127,3 +127,15 @@ body {
     @apply bg-background text-foreground;
   }
 } */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(70.5% 0.015 286.067);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

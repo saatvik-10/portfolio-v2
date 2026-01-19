@@ -1,7 +1,7 @@
 'use server';
 
 import { Resend } from 'resend';
-import { ContactInput } from '@/app/validators/contact.validator';
+import { ContactInput } from '@/validators/contact.validator';
 
 const resend = new Resend(process.env.MAIL_SECRET_KEY);
 

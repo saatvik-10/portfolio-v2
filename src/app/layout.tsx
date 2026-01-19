@@ -9,7 +9,13 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const metaData: Metadata = {};
+export const metadata: Metadata = {
+  title: 'Portfolio',
+  description: 'Beaking code since birth...You are welcome :)',
+  // icons: {
+  //   icon: '/favicon.png',
+  // },
+};
 
 export default function RootLayout({
   children,

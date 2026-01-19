@@ -11,7 +11,7 @@ const Skills = () => {
       <div className="flex flex-row flex-wrap gap-1 md:gap-2">
         {skills.map((skill, idx) => (
           <Modal key={idx}>
-            <Badge className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden rounded-md border-0 bg-zinc-100 px-2 py-0.5 text-xs text-gray-950 md:text-base">
+            <Badge className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden rounded-md border-0 bg-zinc-100 px-2 py-0.5 text-xs text-gray-950 md:text-sm">
               <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-80">
                 {skill.name}
               </span>
@@ -21,8 +21,8 @@ const Skills = () => {
                 <Image
                   src={skill.image}
                   alt={skill.name}
-                  height={24}
-                  width={24}
+                  height={22}
+                  width={22}
                   className="object-contain"
                 />
               </div>

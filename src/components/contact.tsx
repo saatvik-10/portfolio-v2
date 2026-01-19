@@ -64,11 +64,11 @@ const Contact = () => {
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
         <div className="grid grid-cols-4 gap-y-8 md:grid-cols-2">
           <Link
-            href="https://www.linkedin.com/in/saatvik-madan-9ab4a32a9/"
+            href="https://github.com/saatvik-10"
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandLinkedin className="social size-13 text-zinc-100 md:size-28" />
+            <IconBrandGithub className="social size-13 text-zinc-100 md:size-28" />
           </Link>
 
           <Link
@@ -80,11 +80,11 @@ const Contact = () => {
           </Link>
 
           <Link
-            href="https://github.com/saatvik-10"
+            href="https://www.linkedin.com/in/saatvik-madan-9ab4a32a9/"
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandGithub className="social size-13 text-zinc-100 md:size-28" />
+            <IconBrandLinkedin className="social size-13 text-zinc-100 md:size-28" />
           </Link>
 
           <Link

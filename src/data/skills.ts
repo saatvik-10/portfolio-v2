@@ -25,6 +25,11 @@ export const skills = [
     bg: "bg-black",
   },
   {
+    name: "Tailwind CSS",
+    image: "/tw.png",
+    bg: "bg-black",
+  },
+  {
     name: "Bun.js",
     image: "/bun.png",
     bg: "bg-[#FBF0DF]",
@@ -78,5 +83,15 @@ export const skills = [
     name: "AWS",
     image: "/aws.png",
     bg: "bg-gradient-to-r from-[#FF9900] to-[#F68D2E]",
+  },
+  {
+    name: "Nginx",
+    image: "/nginx.png",
+    bg: "bg-gradient-to-r from-[#009639] to-[#00A651]",
+  },
+  {
+    name: "Observability & Monitoring",
+    image: "/monitoring.png",
+    bg: "bg-gradient-to-r from-[#F97316] via-[#EF4444] to-[#DC2626]",
   },
 ];

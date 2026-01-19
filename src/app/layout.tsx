@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "mx-auto min-h-dvh max-w-3xl bg-gray-950 px-6 py-12 font-sans antialiased sm:py-24",
+          "mx-auto min-h-dvh max-w-3xl bg-gray-950 px-4 py-12 font-sans antialiased sm:py-24",
           jetbrainsMono.variable,
         )}
         suppressHydrationWarning

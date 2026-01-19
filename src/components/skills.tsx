@@ -11,7 +11,7 @@ const Skills = () => {
       <div className="flex flex-row flex-wrap gap-2">
         {skills.map((skill, idx) => (
           <Modal key={idx}>
-            <Badge className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden rounded-md border-0 bg-zinc-100 px-2 py-0.5 text-base text-gray-950">
+            <Badge className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden rounded-md border-0 bg-zinc-100 px-2 py-0.5 text-xs md:text-base text-gray-950">
               <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-80">
                 {skill.name}
               </span>

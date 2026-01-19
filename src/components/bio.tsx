@@ -19,7 +19,7 @@ const Bio = () => {
     <section className="flex items-center justify-between">
       <div className="flex flex-col gap-y-3">
         <div className="flex flex-col gap-y-1">
-          <span className="text-3xl font-bold text-zinc-100 md:text-5xl">
+          <span className="text-2xl font-bold text-zinc-100 md:text-5xl">
             Saatvik Madan
           </span>
           <p className="text-xs text-zinc-300 md:text-base">
@@ -30,7 +30,7 @@ const Bio = () => {
         </div>
         <div className="flex flex-row gap-3">
           <Modal>
-            <Button className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base">
+            <Button size={"sm"} className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base">
               <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-80">
                 CONTACT ME
               </span>
@@ -40,7 +40,7 @@ const Bio = () => {
             </Button>
           </Modal>
           <Modal>
-            <Button
+            <Button size={"sm"}
               onClick={handleResumeDownload}
               className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base"
             >

@@ -30,8 +30,8 @@ const Projects = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          {/* <CarouselPrevious />
+          <CarouselNext /> */}
         </Carousel>
 
         <div className="hidden grid-cols-3 gap-4 md:grid lg:grid">

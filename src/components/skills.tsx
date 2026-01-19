@@ -1,6 +1,8 @@
 import { skills } from "@/data/skills";
 import { Badge } from "./ui/badge";
 import Heading from "./heading";
+import Image from "next/image";
+import { Modal } from "./ui/animated-modal";
 
 const Skills = () => {
   return (
@@ -8,12 +10,24 @@ const Skills = () => {
       <Heading title="Skills" />
       <div className="flex flex-row flex-wrap gap-2">
         {skills.map((skill, idx) => (
-          <Badge
-            className="cursor-pointer rounded-md bg-zinc-100 text-base text-gray-950 transition-transform hover:-translate-y-1"
-            key={idx}
-          >
-            {skill.name}
-          </Badge>
+          <Modal key={idx}>
+            <Badge className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden rounded-md border-0 bg-zinc-100 px-2 py-0.5 text-base text-gray-950">
+              <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-80">
+                {skill.name}
+              </span>
+              <div
+                className={`absolute inset-0 flex -translate-x-80 items-center justify-center transition duration-500 group-hover/modal-btn:translate-x-0 ${skill.bg}`}
+              >
+                <Image
+                  src={skill.image}
+                  alt={skill.name}
+                  height={24}
+                  width={24}
+                  className="object-contain"
+                />
+              </div>
+            </Badge>
+          </Modal>
         ))}
       </div>
     </section>

@@ -1,11 +1,11 @@
 'use server';
 
 import { Resend } from 'resend';
-// import { ContactInput } from '@/validators/contact.validator';
+import { ContactInput } from '@/app/validators/contact.validator';
 
-const resend = new Resend(process.env.NEXT_PUBLIC_MAIL_SECRET_KEY);
+const resend = new Resend(process.env.MAIL_SECRET_KEY);
 
-export const sendEmail = async (data: any) => {
+export const sendEmail = async (data: ContactInput) => {
   try {
     const { name, email, message } = data;
 

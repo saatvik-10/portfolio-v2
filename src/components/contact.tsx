@@ -68,7 +68,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandGithub className="social size-13 text-zinc-100 md:size-28" />
+            <IconBrandGithub className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
           </Link>
 
           <Link
@@ -76,7 +76,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconMail className="social size-13 text-zinc-100 md:size-28" />
+            <IconMail className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
           </Link>
 
           <Link
@@ -84,7 +84,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandLinkedin className="social size-13 text-zinc-100 md:size-28" />
+            <IconBrandLinkedin className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
           </Link>
 
           <Link
@@ -92,7 +92,7 @@ const Contact = () => {
             target="_blank"
             className="flex justify-center md:justify-start"
           >
-            <IconBrandX className="social size-13 text-zinc-100 md:size-28" />
+            <IconBrandX className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
           </Link>
         </div>
 

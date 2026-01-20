@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { Toaster } from "sonner";
+import Footer from "@/components/footer";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -11,8 +12,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Beaking code since birth...You are welcome :)',
+  title: "Portfolio",
+  description: "Beaking code since birth...You are welcome :)",
   // icons: {
   //   icon: '/favicon.png',
   // },
@@ -27,12 +28,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "mx-auto min-h-dvh max-w-3xl bg-gray-950 px-4 py-12 font-sans antialiased sm:py-24",
+          "min-h-dvh bg-gray-950 font-sans antialiased",
           jetbrainsMono.variable,
         )}
         suppressHydrationWarning
       >
-        {children}
+        <div className="mx-auto max-w-3xl px-4 py-12 sm:py-24">{children}</div>
+        <Footer />
         <Analytics />
         <Toaster />
       </body>

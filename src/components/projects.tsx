@@ -48,7 +48,7 @@ const Projects = () => {
               <CardContent className="flex h-full w-full flex-col items-start border-0 border-none p-0">
                 <div className="relative">
                   <Image
-                    src={project.image}
+                    src={project.image || '/projects/cs.avif'}
                     alt={``}
                     width={400}
                     height={144}

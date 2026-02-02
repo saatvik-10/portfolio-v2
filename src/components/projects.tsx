@@ -119,14 +119,14 @@ const Projects = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          {/* <CarouselPrevious />
+          <CarouselNext /> */}
         </Carousel>
 
         <div className="hidden grid-cols-3 gap-4 md:grid lg:grid">
           {projects.map((project, index) => (
             <Card
-              className="flex h-full flex-col overflow-hidden border border-zinc-200 p-0"
+              className="flex h-full flex-col overflow-hidden p-0"
               key={index}
             >
               <CardContent className="flex h-full w-full flex-col items-start p-0">
@@ -143,8 +143,8 @@ const Projects = () => {
                     {project.title}
                   </span>
                 </div>
-                <div className="flex grow flex-col justify-between p-2">
-                  <p className="mb-3 text-xs leading-4.25 text-zinc-950">
+                <div className="flex grow flex-col justify-between p-2.5">
+                  <p className="mb-3 text-sm leading-4.25 text-zinc-950">
                     {project.description}
                   </p>
                   <div className="flex flex-row items-center justify-end gap-1 text-xs">

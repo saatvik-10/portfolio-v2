@@ -62,37 +62,41 @@ const Contact = () => {
     <section id="contact" className="flex flex-col gap-y-3">
       <Heading title="Contact" />
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
-        <div className="grid grid-cols-4 gap-y-8 md:grid-cols-2">
+        <div className="flex flex-col gap-3">
           <Link
             href="https://github.com/saatvik-10"
             target="_blank"
-            className="flex justify-center md:justify-start"
+            className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconBrandGithub className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
+            <IconBrandGithub className="size-12" />
+            <span className="text-lg">GitHub</span>
           </Link>
 
           <Link
             href="mailto:yello@itsaatvik.dev"
             target="_blank"
-            className="flex justify-center md:justify-start"
+            className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconMail className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
+            <IconMail className="size-12" />
+            <span className="text-lg">Email</span>
           </Link>
 
           <Link
             href="https://www.linkedin.com/in/saatvik-madan-9ab4a32a9/"
             target="_blank"
-            className="flex justify-center md:justify-start"
+            className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconBrandLinkedin className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
+            <IconBrandLinkedin className="size-12" />
+            <span className="text-lg">LinkedIn</span>
           </Link>
 
           <Link
             href="https://x.com/PhO3NiX___10"
             target="_blank"
-            className="flex justify-center md:justify-start"
+            className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconBrandX className="social size-13 text-zinc-100 hover:text-zinc-400 md:size-28" />
+            <IconBrandX className="size-12" />
+            <span className="text-lg">X (Twitter)</span>
           </Link>
         </div>
 

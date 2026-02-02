@@ -71,9 +71,9 @@ const Projects = () => {
                             "Still in the workshop—stay tuned for something amazing!",
                           )
                         }
-                        className="cursor-pointer"
+                        className="cursor-not-allowed"
                       >
-                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
+                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 opacity-50">
                           <ExternalLink />
                           Demo
                         </Badge>
@@ -94,12 +94,12 @@ const Projects = () => {
                       <div
                         onClick={() =>
                           toast.info(
-                            "This repository is Private as it was developed for a company client.",
+                            "This repository is private as it was developed for a company client.",
                           )
                         }
-                        className="cursor-pointer"
+                        className="cursor-not-allowed"
                       >
-                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
+                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 opacity-50">
                           <Github />
                           Source
                         </Badge>

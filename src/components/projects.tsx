@@ -48,7 +48,7 @@ const Projects = () => {
               <CardContent className="flex h-full w-full flex-col items-start border-0 border-none p-0">
                 <div className="relative">
                   <Image
-                    src={project.image || '/projects/cs.avif'}
+                    src={project.image || "/projects/cs.avif"}
                     alt={``}
                     width={400}
                     height={144}
@@ -85,8 +85,8 @@ const Projects = () => {
                         target="_blank"
                       >
                         <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
-                          <Github />
-                          Source
+                          <ExternalLink />
+                          Demo
                         </Badge>
                       </Link>
                     )}

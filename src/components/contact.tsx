@@ -125,7 +125,7 @@ const Contact = () => {
           )}
           <Textarea
             {...register("message")}
-            placeholder="Type your message here."
+            placeholder="Type your message here..."
             className="h-screen flex-1 resize-none text-zinc-300 placeholder:text-xs"
           />
           {errors.message && (

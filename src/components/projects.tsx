@@ -9,6 +9,9 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "./ui/badge";
+import { projects } from "@/data/projects";
+import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   return (
@@ -37,28 +40,45 @@ const Projects = () => {
         </Carousel>
 
         <div className="hidden grid-cols-3 gap-4 md:grid lg:grid">
-          {Array.from({ length: 6 }).map((_, index) => (
-            <Card className="overflow-hidden p-0" key={index}>
-              <CardContent className="flex w-full flex-col items-start border-0 border-none p-0">
-                <Image src="" alt="" className="h-36 w-full bg-black" />
-                <div className="p-3">
-                  <p className="text-sm leading-4.5 text-zinc-950">
-                    A website uptime monitoring platform to monitor your
-                    websites, APIs, and endpoints with real-time status checks,
-                    email alerts, and dashboards.
+          {projects.map((project, index) => (
+            <Card className="flex flex-col overflow-hidden p-0" key={index}>
+              <CardContent className="flex h-full w-full flex-col items-start border-0 border-none p-0">
+                <div className="relative">
+                  <Image
+                    src={project.image}
+                    alt={``}
+                    width={400}
+                    height={144}
+                    className="h-36 w-full bg-black object-cover"
+                    quality={100}
+                  />
+                  <span className="absolute right-1 bottom-1 flex-1 rounded-md bg-white p-1 text-xs text-zinc-950">
+                    {project.title}
+                  </span>
+                </div>
+                <div className="flex grow flex-col justify-between p-2">
+                  <p className="mb-3 text-xs leading-4.25 text-zinc-950">
+                    {project.description}
                   </p>
-                  <div className="flex flex-row items-center justify-end gap-3 text-xs">
+                  <div className="flex flex-row items-center justify-end gap-1 text-xs">
                     <Link
                       className="cursor-pointer hover:font-bold hover:underline"
-                      href=""
+                      href={project.demo}
+                      target="_blank"
                     >
-                      Demo
+                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100">
+                        <ExternalLink />
+                        Demo
+                      </Badge>
                     </Link>
                     <Link
                       className="cursor-pointer hover:font-bold hover:underline"
-                      href=""
+                      href={project.source}
                     >
-                      Souce
+                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100">
+                        <Github />
+                        Source
+                      </Badge>
                     </Link>
                   </div>
                 </div>

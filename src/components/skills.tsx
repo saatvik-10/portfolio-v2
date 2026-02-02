@@ -23,6 +23,7 @@ const Skills = () => {
                   alt={skill.name}
                   height={22}
                   width={22}
+                  loading="eager"
                   className="object-contain"
                 />
               </div>

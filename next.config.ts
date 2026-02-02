@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
+  images: {
+    qualities: [100, 75],
+  },
 };
 
 export default nextConfig;

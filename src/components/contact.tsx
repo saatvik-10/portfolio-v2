@@ -68,8 +68,8 @@ const Contact = () => {
             target="_blank"
             className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconBrandGithub className="size-12" />
-            <span className="text-lg">GitHub</span>
+            <IconBrandGithub className="md:size-12" />
+            <span className="text-sm md:text-lg">GitHub</span>
           </Link>
 
           <Link
@@ -77,8 +77,8 @@ const Contact = () => {
             target="_blank"
             className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconMail className="size-12" />
-            <span className="text-lg">Email</span>
+            <IconMail className="md:size-12" />
+            <span className="text-sm md:text-lg">Email</span>
           </Link>
 
           <Link
@@ -86,8 +86,8 @@ const Contact = () => {
             target="_blank"
             className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconBrandLinkedin className="size-12" />
-            <span className="text-lg">LinkedIn</span>
+            <IconBrandLinkedin className="md:size-12" />
+            <span className="text-sm md:text-lg">LinkedIn</span>
           </Link>
 
           <Link
@@ -95,8 +95,8 @@ const Contact = () => {
             target="_blank"
             className="group flex items-center gap-3 text-zinc-400 transition-colors hover:text-zinc-100"
           >
-            <IconBrandX className="size-12" />
-            <span className="text-lg">X (Twitter)</span>
+            <IconBrandX className="md:size-12" />
+            <span className="text-sm md:text-lg">X (Twitter)</span>
           </Link>
         </div>
 

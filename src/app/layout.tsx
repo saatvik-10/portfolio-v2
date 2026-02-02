@@ -14,9 +14,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Beaking code since birth...You are welcome :)",
-  // icons: {
-  //   icon: '/favicon.png',
-  // },
+  icons: {
+    icon: '/fav-32.png',
+  },
 };
 
 export default function RootLayout({

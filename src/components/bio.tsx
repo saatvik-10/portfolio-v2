@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,13 @@ const Bio = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -30,7 +37,11 @@ const Bio = () => {
         </div>
         <div className="flex flex-row gap-3">
           <Modal>
-            <Button size={"sm"} className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base">
+            <Button
+              onClick={handleScrollToContact}
+              size={"sm"}
+              className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base"
+            >
               <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-80">
                 CONTACT ME
               </span>
@@ -40,7 +51,8 @@ const Bio = () => {
             </Button>
           </Modal>
           <Modal>
-            <Button size={"sm"}
+            <Button
+              size={"sm"}
               onClick={handleResumeDownload}
               className="group/modal-btn relative flex cursor-pointer justify-center overflow-hidden bg-zinc-100 text-xs text-gray-950 transition-colors hover:bg-gray-300 md:text-base"
             >

@@ -1,7 +1,7 @@
 interface Skills {
-  name: String;
-  image: String;
-  bg: String;
+  name: string;
+  image: string;
+  bg: string;
 }
 
 export const skills: Skills[] = [

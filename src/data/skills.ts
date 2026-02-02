@@ -1,4 +1,10 @@
-export const skills = [
+interface Skills {
+  name: String;
+  image: String;
+  bg: String;
+}
+
+export const skills: Skills[] = [
   {
     name: "Typescript",
     image: "/skills/typescript.png",

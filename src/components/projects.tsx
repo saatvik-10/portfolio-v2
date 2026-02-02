@@ -55,8 +55,8 @@ const Projects = () => {
                         {project.title}
                       </span>
                     </div>
-                    <div className="flex grow flex-col justify-between p-2">
-                      <p className="mb-3 text-xs leading-4.25 text-zinc-950">
+                    <div className="flex grow flex-col justify-between p-2.5">
+                      <p className="mb-3 text-sm leading-4.25 text-zinc-950">
                         {project.description}
                       </p>
                       <div className="flex flex-row items-center justify-end gap-1 text-xs">

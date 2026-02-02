@@ -66,7 +66,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                     >
-                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100">
+                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-700">
                         <ExternalLink />
                         Demo
                       </Badge>
@@ -74,8 +74,9 @@ const Projects = () => {
                     <Link
                       className="cursor-pointer hover:font-bold hover:underline"
                       href={project.source}
+                      target="_blank"
                     >
-                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100">
+                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
                         <Github />
                         Source
                       </Badge>

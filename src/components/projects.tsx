@@ -1,3 +1,5 @@
+"use client";
+
 import Heading from "./heading";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -12,6 +14,7 @@ import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { projects } from "@/data/projects";
 import { ExternalLink, Github } from "lucide-react";
+import { toast } from "sonner";
 
 const Projects = () => {
   return (
@@ -61,26 +64,58 @@ const Projects = () => {
                     {project.description}
                   </p>
                   <div className="flex flex-row items-center justify-end gap-1 text-xs">
-                    <Link
-                      className="cursor-pointer hover:font-bold hover:underline"
-                      href={project.demo}
-                      target="_blank"
-                    >
-                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-700">
-                        <ExternalLink />
-                        Demo
-                      </Badge>
-                    </Link>
-                    <Link
-                      className="cursor-pointer hover:font-bold hover:underline"
-                      href={project.source}
-                      target="_blank"
-                    >
-                      <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
-                        <Github />
-                        Source
-                      </Badge>
-                    </Link>
+                    {project.demo === "NA" ? (
+                      <div
+                        onClick={() =>
+                          toast.info(
+                            "Still in the workshop—stay tuned for something amazing!",
+                          )
+                        }
+                        className="cursor-pointer"
+                      >
+                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
+                          <ExternalLink />
+                          Demo
+                        </Badge>
+                      </div>
+                    ) : (
+                      <Link
+                        className="cursor-pointer hover:font-bold hover:underline"
+                        href={project.source}
+                        target="_blank"
+                      >
+                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
+                          <Github />
+                          Source
+                        </Badge>
+                      </Link>
+                    )}
+                    {project.source === "NA" ? (
+                      <div
+                        onClick={() =>
+                          toast.info(
+                            "This repository is Private as it was developed for a company client.",
+                          )
+                        }
+                        className="cursor-pointer"
+                      >
+                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
+                          <Github />
+                          Source
+                        </Badge>
+                      </div>
+                    ) : (
+                      <Link
+                        className="cursor-pointer hover:font-bold hover:underline"
+                        href={project.source}
+                        target="_blank"
+                      >
+                        <Badge className="flex items-center gap-1 rounded-md bg-zinc-950 text-zinc-100 hover:bg-zinc-800">
+                          <Github />
+                          Source
+                        </Badge>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </CardContent>

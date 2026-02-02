@@ -11,7 +11,7 @@ export const projects: Project[] = [
     image: "",
     description:
       "A website uptime monitoring platform to monitor your websites, APIs, and endpoints with real-time status checks, email alerts, and dashboards.",
-    demo: "",
+    demo: "NA",
     source: "https://github.com/saatvik-10/up-site-ts",
   },
   {

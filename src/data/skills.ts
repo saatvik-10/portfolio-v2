@@ -16,6 +16,11 @@ export const skills: Skills[] = [
     bg: "bg-gradient-to-br from-[#CE422B] to-[#5C2E91]",
   },
   {
+    name: "Golang",
+    image: "/skills/go.png",
+    bg: "bg-gradient-to-r from-[#00ACD7] to-[#5DC9E2]",
+  },
+  {
     name: "Solana",
     image: "/skills/sol.png",
     bg: "bg-gradient-to-r from-[#9945FF] via-[#14F195] to-[#00D4FF]",
@@ -24,6 +29,11 @@ export const skills: Skills[] = [
     name: "React",
     image: "/skills/react.png",
     bg: "bg-[#61DAFB]",
+  },
+  {
+    name: "React Native",
+    image: "/skills/native.png",
+    bg: "bg-gradient-to-br from-[#20232A] to-[#61DAFB]",
   },
   {
     name: "Next.js",

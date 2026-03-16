@@ -119,14 +119,14 @@ const Projects = () => {
           <CarouselNext /> */}
         </Carousel>
 
-        <div className="hidden grid-cols-3 gap-4 md:grid lg:grid">
+        <div className="hidden grid-cols-3 gap-2 md:grid lg:grid">
           {projects.map((project, index) => (
             <Card
               className="flex h-full flex-col overflow-hidden p-0"
               key={index}
             >
               <CardContent className="flex h-full w-full flex-col items-start p-0">
-                <div className="relative h-44 w-full">
+                <div className="relative h-36 w-full">
                   <Image
                     src={project.image || "/projects/cs.avif"}
                     alt={``}

@@ -29,7 +29,7 @@ const Projects = () => {
           }}
           plugins={[
             Autoplay({
-              delay: 2000,
+              delay: 2500,
             }),
           ]}
           className="w-full md:hidden lg:hidden"
@@ -38,22 +38,18 @@ const Projects = () => {
             {projects.map((project, index) => (
               <CarouselItem key={index} className="flex">
                 <Card
-                  className="flex h-full w-full flex-col overflow-hidden border inset-0 p-0"
+                  className="inset-0 flex h-full w-full flex-col overflow-hidden border p-0"
                   key={index}
                 >
                   <CardContent className="flex h-full w-full flex-col items-start p-0">
-                    <div className="relative">
+                    <div className="relative h-52 w-full">
                       <Image
                         src={project.image || "/projects/cs.avif"}
                         alt={``}
-                        width={400}
-                        height={144}
-                        className="h-36 w-screen bg-black object-cover"
+                        fill
+                        className="bg-black object-cover"
                         quality={100}
                       />
-                      <span className="absolute right-1 bottom-1 flex-1 rounded-md bg-white p-1 text-xs text-zinc-950">
-                        {project.title}
-                      </span>
                     </div>
                     <div className="flex grow flex-col justify-between p-2.5">
                       <p className="mb-3 text-sm leading-4.25 text-zinc-950">
@@ -64,7 +60,7 @@ const Projects = () => {
                           <div
                             onClick={() =>
                               toast.info(
-                                "Still in the workshop—stay tuned for something amazing!",
+                                "This is a mobile app — visit the link in repo and run it locally via Expo.",
                               )
                             }
                             className="cursor-not-allowed"
@@ -130,18 +126,14 @@ const Projects = () => {
               key={index}
             >
               <CardContent className="flex h-full w-full flex-col items-start p-0">
-                <div className="relative">
+                <div className="relative h-44 w-full">
                   <Image
                     src={project.image || "/projects/cs.avif"}
                     alt={``}
-                    width={400}
-                    height={144}
-                    className="h-36 w-full bg-black object-cover"
+                    fill
+                    className="bg-black object-cover"
                     quality={100}
                   />
-                  <span className="absolute right-1 bottom-1 flex-1 rounded-md bg-white p-1 text-xs text-zinc-950">
-                    {project.title}
-                  </span>
                 </div>
                 <div className="flex grow flex-col justify-between p-2.5">
                   <p className="mb-3 text-sm leading-4.25 text-zinc-950">
@@ -152,7 +144,7 @@ const Projects = () => {
                       <div
                         onClick={() =>
                           toast.info(
-                            "Still in the workshop—stay tuned for something amazing!",
+                            "This is a mobile app — visit the link in repo and run it locally via Expo.",
                           )
                         }
                         className="cursor-not-allowed"

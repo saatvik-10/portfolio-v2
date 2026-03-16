@@ -8,11 +8,11 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    image: "",
+    image: "/projects/ephemeris.png",
     description:
-      "A website uptime monitoring platform to monitor your websites, APIs, and endpoints with real-time status checks, email alerts, and dashboards",
+      "An event attendance system where showing up means something. Scan QR code at the door, get a session-scoped identity, mark attendance, and mint a Solana NFT as a permanent proof — no accounts, no passwords, just presence.",
     demo: "NA",
-    source: "https://github.com/saatvik-10/up-site-ts",
+    source: "https://github.com/saatvik-10/monolith-hackathon-ephemeris",
   },
   {
     image: "/projects/ies.png",

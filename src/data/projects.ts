@@ -8,11 +8,11 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    image: "/projects/ephemeris.png",
+    image: "/projects/omegle.png",
     description:
-      "An event attendance system where showing up means something. Scan QR code at the door, get a session-scoped identity, mark attendance, and mint a Solana NFT as a permanent proof — no accounts, no passwords, just presence.",
-    demo: "NA",
-    source: "https://github.com/saatvik-10/monolith-hackathon-ephemeris",
+      "A real-time Omegle-style video chat app with a React + TypeScript (Vite) frontend and a Node.js/TypeScript WebSocket backend, supporting matchmaking, rooms, live chat, and Dockerized deployment with Redis-backed state.",
+    demo: "https://better-omegle.itsaatvik.dev",
+    source: "https://github.com/saatvik-10/better-omegle",
   },
   {
     image: "/projects/ies.png",

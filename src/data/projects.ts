@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     image: "/projects/omegle.png",
     description:
-      "A real-time Omegle-style video chat app with a React + TypeScript (Vite) frontend and a Node.js/TypeScript WebSocket backend, supporting matchmaking, rooms, live chat, and Dockerized deployment with Redis-backed state.",
+      "A real-time, Omegle-style video chat app featuring instant matchmaking, private rooms, live messaging, and resilient session/room state for smooth low-latency connections.",
     demo: "https://better-omegle.itsaatvik.dev",
     source: "https://github.com/saatvik-10/better-omegle",
   },

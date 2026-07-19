@@ -21,6 +21,11 @@ export const skills: Skills[] = [
     bg: "bg-gradient-to-r from-[#00ACD7] to-[#5DC9E2]",
   },
   {
+    name: "Python",
+    image: "/skills/python.png",
+    bg: "bg-gradient-to-r from-[#3776AB] to-[#FFD43B]",
+  },
+  {
     name: "Solana",
     image: "/skills/sol.png",
     bg: "bg-gradient-to-r from-[#9945FF] via-[#14F195] to-[#00D4FF]",
@@ -71,6 +76,11 @@ export const skills: Skills[] = [
     bg: "bg-[#000000]",
   },
   {
+    name: "FastAPI",
+    image: "/skills/fastapi.png",
+    bg: "bg-gradient-to-r from-[#009688] to-[#00C7B7]",
+  },
+  {
     name: "Postgres",
     image: "/skills/postgres.png",
     bg: "bg-[#336791]",
@@ -84,6 +94,11 @@ export const skills: Skills[] = [
     name: "Prisma",
     image: "/skills/prisma.png",
     bg: "bg-gradient-to-r from-[#0C344B] via-[#2D3748] to-[#5A67D8]",
+  },
+  {
+    name: "Redis",
+    image: "/skills/redis.png",
+    bg: "bg-gradient-to-r from-[#DC382D] to-[#A41E11]",
   },
   {
     name: "Docker",

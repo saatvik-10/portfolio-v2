@@ -8,6 +8,13 @@ interface Project {
 
 export const projects: Project[] = [
   {
+    image: "/projects/rag.png",
+    description:
+      "A modular Retrieval-Augmented Generation (RAG) engine built from scratch using FastAPI, PostgreSQL (pgvector), Sentence Transformers, and OpenRouter.",
+    demo: "NA",
+    source: "https://github.com/saatvik-10/rag_engine",
+  },
+  {
     image: "/projects/omegle.png",
     description:
       "A real-time, Omegle-style video chat app featuring instant matchmaking, private rooms, live messaging, and resilient session/room state for smooth low-latency connections.",
@@ -20,13 +27,6 @@ export const projects: Project[] = [
       "Crafted a responsive, performance-focused e-commerce site for In Search Outdoors, integrating seamless product browsing and checkout flows with clean UI/UX",
     demo: "https://www.insearchoutdoors.com/",
     source: "NA",
-  },
-  {
-    image: "/projects/paper-whisper.png",
-    description:
-      "A SaaS web application that allows users to upload PDF documents and interact with them through natural language, powered by LangChain and OpenAI's GPT models",
-    demo: "https://paper-whisper.itsaatvik.dev/",
-    source: "https://github.com/saatvik-10/paper-whisper",
   },
   {
     image: "/projects/dynero.png",

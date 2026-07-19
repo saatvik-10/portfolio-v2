@@ -60,7 +60,7 @@ const Projects = () => {
                           <div
                             onClick={() =>
                               toast.info(
-                                "This is a mobile app — visit the link in repo and run it locally via Expo.",
+                                "This project is API-first and does not include a public frontend.",
                               )
                             }
                             className="cursor-not-allowed"
@@ -144,7 +144,7 @@ const Projects = () => {
                       <div
                         onClick={() =>
                           toast.info(
-                            "This is a mobile app — visit the link in repo and run it locally via Expo.",
+                            "This project is API-first and does not include a public frontend.",
                           )
                         }
                         className="cursor-not-allowed"
